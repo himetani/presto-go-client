@@ -83,10 +83,10 @@ func init() {
 
 var (
 	// DefaultQueryTimeout is the default timeout for queries executed without a context.
-	DefaultQueryTimeout = 60 * time.Second
+	DefaultQueryTimeout = 600 * time.Second
 
 	// DefaultCancelQueryTimeout is the timeout for the request to cancel queries in presto.
-	DefaultCancelQueryTimeout = 30 * time.Second
+	DefaultCancelQueryTimeout = 300 * time.Second
 
 	// ErrOperationNotSupported indicates that a database operation is not supported.
 	ErrOperationNotSupported = errors.New("presto: operation not supported")
